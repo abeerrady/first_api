@@ -17,9 +17,7 @@ class _ViewScreenState extends State<ViewScreen> {
   void getData() async {
     Controller cont = Controller();
     data = await cont.getData();
-    setState(() {
-      isLoading = false;
-    });
+    setState(() => isLoading = false);
   }
 
   @override
