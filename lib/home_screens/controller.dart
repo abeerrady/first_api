@@ -11,8 +11,8 @@ class Controller {
     await dio.get('https://www.breakingbadapi.com/api/characters');
     final app = response.data as List;
     List<ResponseData> data = [];
-    app.forEach((value) {
-      ResponseData name = ResponseData.fromJson(value);
+    app.forEach((value  ) {
+      ResponseData name = ResponseData.fromJson(value );
       data.add(name);
     });
     return data;

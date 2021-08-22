@@ -1,7 +1,12 @@
+import 'package:first_api/home_screens/login_screens/login_view.dart';
 import 'package:first_api/home_screens/view.dart';
 import 'package:flutter/material.dart';
 
+import 'home_screens/singup_screen/singup_view.dart';
+import 'home_screens/splash_screen.dart';
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
@@ -11,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
     debugShowCheckedModeBanner: false,
-      home: ViewScreen(),
+      home: SingUpView(),
     );
   }
 }
